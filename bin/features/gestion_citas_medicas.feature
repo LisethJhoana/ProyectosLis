@@ -10,9 +10,9 @@ Feature: Gestionar Cita Médica
   @tag1
   Scenario: Realizar el Registro de un Doctor
     Given que Carlos necesita hacer un registro en herokuapp
-    When el realiza el registro del Doctor en el aplicativo de Administración de Hospitales
+    When el realiza el registro del Doctor en el aplicativo de Administracion de Hospitales
     |Nombres |Apellidos |Telefono  |TipoDocumento       |Documento|
-    |Mauricio|Pinzon    |3001230000|Cédula de ciudadanía|10001000 |
+    |Mauricio|Pinzon    |3001230000|Cédula de ciudadanía|10003000 |
     Then el verifica que se presente en pantalla el mensaje Datos guardados correctamente
 		|Mensaje    |
 		|Datos guardados correctamente.|
@@ -22,7 +22,7 @@ Feature: Gestionar Cita Médica
 	Given que Carlos necesita hacer un registro en herokuapp
 	When el realiza el registro del Paciente en el aplicativo de Administracion de Hospitales
 	|Nombres |Apellidos |Telefono  |TipoDocumento       |Documento|
-  |Angela  |Agudelo   |3001230000|Pasaportes          |10001000 |
+  |Angela  |Agudelo   |3001230000|Pasaportes          |10003000 |
 	Then el verifica que se presente en pantalla el mensaje Datos guardados correctamente
 	|Mensaje    |
 	|Datos guardados correctamente.|
@@ -32,7 +32,7 @@ Feature: Gestionar Cita Médica
 	Given que Carlos necesita hacer un registro en herokuapp
 	When el realiza el agendamiento de una Cita
 	|DiaCita     |DocPaciente |DocDoctor  |Observaciones     |
-  |10/19/2018  |10001000    |10001000   |Revision mensual  |
+  |10/19/2018  |10003000    |10003000   |Revision mensual  |
 	Then el verifica que se presente en pantalla el mensaje Datos guardados correctamente
 	|Mensaje    |
 	|Datos guardados correctamente.|

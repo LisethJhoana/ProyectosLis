@@ -39,8 +39,8 @@ public class GestorCitasStepDefinitions {
 		mauro.wasAbleTo(Abrir.laPaginaDeCitas());
 	}
 	
-	@When("^el realiza el registro del Doctor en el aplicativo de Administración de Hospitales$")
-	public void elRealizaElRegistroDelDoctorEnElAplicativoDeAdministraciónDeHospitales(List<List<String>> datos) throws Exception {
+	@When("^el realiza el registro del Doctor en el aplicativo de Administracion de Hospitales$")
+	public void elRealizaElRegistroDelDoctorEnElAplicativoDeAdministracionDeHospitales(List<List<String>> datos) throws Exception {
 		
 		mauro.attemptsTo(AgregarDoctor.nuevoRegistro(new Persona(datos.get(1))));
 		Thread.sleep(3000);

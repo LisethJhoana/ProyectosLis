@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 
-@DefaultUrl("http://automatizacion.herokuapp.com/aagudelo/")
+@DefaultUrl("http://automatizacion.herokuapp.com/aliseth/")
 public class CitaHomePage extends PageObject{
 	
 	public static final Target BOTON_AGREGAR_DOCTOR = Target.the("Boton agregar doctor").located(By.xpath("//div[@class='list-group']//a[contains(text(),'Doctor')]"));
